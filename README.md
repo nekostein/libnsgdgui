@@ -10,6 +10,13 @@ https://pub-714f8d634e8f451d9f2fe91a4debfa23.r2.dev/libnsgdgui/87bb25efffde3dda2
 
 
 
+## Installation
+
+Use as git submodule:
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+
+
 ## Copyright
 
 Copyright (c) 2024 Nekostein. Released with the MIT license.
