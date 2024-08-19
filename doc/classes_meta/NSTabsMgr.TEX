@@ -1,8 +1,9 @@
 extends Node
 
-@export var buttons: Array[Button] = []
+@export var buttons: Array{[}Control{]} = {[}{]}
 
-@export var contents: Array[Control] = []
+@export var contents: Array{[}Control{]} = {[}{]}
 
-@export var is_active: bool = true # TODO: If true, listen to game controller switching (L1/R1, etc)
+@export var is\_joypad\_active: bool = true
 
+@export var hierarchy\_layer: int = 1 \# 1 or 2

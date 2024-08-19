@@ -5,7 +5,7 @@ mkdir -p doc/{classes_meta,classes_def} doc/.data
 listfn="doc/.data/classes_list.TEX"
 
 function _step_exported_vars() {
-    grep '@export ' "$gdfn" | sed 's|$|\n|'
+    grep '@export ' "$gdfn" | sed 's|$|\n|' | pandoc -f gfm -t latex
 }
 
 function work_on_gd_file() {
