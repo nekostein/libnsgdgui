@@ -4,6 +4,14 @@ extends Node
 
 @export var contents: Array{[}Control{]} = {[}{]}
 
-@export var is\_joypad\_active: bool = true
+@export var contents\_enabled: bool = true \# If false, ignore contents
 
-@export var hierarchy\_layer: int = 1 \# 1 or 2
+@export var is\_joypad\_active: bool = true \# If true, allows game
+controller
+
+@export var hierarchy\_layer: JoypadControlGroup =
+JoypadControlGroup.L1\_R1
+
+@export var disabled\_at\_start: int = 0 \# Hide initial N tabs
+
+@export var disabled\_at\_end: int = 0 \# Hide last N tabs
